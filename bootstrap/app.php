@@ -27,6 +27,7 @@ $app = new Laravel\Lumen\Application(
 
  $app->withEloquent();
 
+ $app->configure('database');
 /*
 |--------------------------------------------------------------------------
 | Register Container Bindings
@@ -60,6 +61,7 @@ $app->singleton(
 */
 
 $app->configure('app');
+
 
 /*
 |--------------------------------------------------------------------------
